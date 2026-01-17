@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+
+  /* Premium Dark Palette */
+  --background: #0a0a0a; /* Almost Black */
+  --foreground: #f0f0f0; /* Off White */
+
+  --card: #141414; /* Dark Gray */
+  --card-foreground: #f0f0f0;
+
+  --popover: #141414;
+  --popover-foreground: #f0f0f0;
+
+  --primary: #D4AF37; /* Metallic Gold */
+  --primary-foreground: #0a0a0a;
+
+  --secondary: #4B0082; /* Deep Indigo/Purple */
+  --secondary-foreground: #f0f0f0;
+
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+
+  --accent: #D4AF37; /* Gold */
+  --accent-foreground: #0a0a0a;
+
+  --destructive: #7f1d1d;
+  --destructive-foreground: #f0f0f0;
+
+  --border: #333333;
+  --input: #1a1a1a;
+
+  /* Font Variables */
+  --font-inter: var(--font-inter);
+  --font-outfit: var(--font-outfit);
+
+  --radius: 0.5rem;
+}
+
+.dark {
+    /* Same as root for now as we want a default dark theme */
+  --background: #0a0a0a;
+  --foreground: #f0f0f0;
+  --card: #141414;
+  --card-foreground: #f0f0f0;
+  --popover: #141414;
+  --popover-foreground: #f0f0f0;
+  --primary: #D4AF37;
+  --primary-foreground: #0a0a0a;
+  --secondary: #4B0082;
+  --secondary-foreground: #f0f0f0;
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+  --accent: #D4AF37;
+  --accent-foreground: #0a0a0a;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #f0f0f0;
+  --border: #333333;
+  --input: #1a1a1a;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

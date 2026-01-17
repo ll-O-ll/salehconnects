@@ -64,9 +64,9 @@ export function Navbar() {
                                 </Button>
                             </SheetTrigger>
                             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                                <div className="flex flex-col gap-6 mt-10">
-                                    <div className="flex items-center gap-2 mb-4">
-                                        <div className="relative w-8 h-8">
+                                <div className="flex flex-col h-full justify-center items-center gap-10">
+                                    <div className="flex flex-col items-center gap-4">
+                                        <div className="relative w-12 h-12">
                                             <Image
                                                 src="/images/salahconnect-logo.png"
                                                 alt="Saleh Connect Logo"
@@ -74,22 +74,22 @@ export function Navbar() {
                                                 className="object-contain"
                                             />
                                         </div>
-                                        <span className="font-heading text-lg font-bold tracking-tight">
+                                        <span className="font-heading text-2xl font-bold tracking-tight text-center">
                                             Saleh Connects
                                         </span>
                                     </div>
-                                    <div className="flex flex-col gap-4">
+                                    <div className="flex flex-col gap-6 w-full px-6">
                                         {navItems.map((item) => (
                                             <Link
                                                 key={item.href}
                                                 href={item.href}
                                                 onClick={() => setIsOpen(false)}
-                                                className="text-lg font-medium hover:text-primary transition-colors text-left py-2 border-b border-border/10"
+                                                className="text-xl font-medium hover:text-primary transition-colors text-center py-2"
                                             >
                                                 {item.label}
                                             </Link>
                                         ))}
-                                        <Button asChild className="w-full mt-2 rounded-full font-bold">
+                                        <Button asChild className="w-full mt-4 rounded-full font-bold h-12 text-md">
                                             <Link href="#contact" onClick={() => setIsOpen(false)}>Get Started</Link>
                                         </Button>
                                     </div>

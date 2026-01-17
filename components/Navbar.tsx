@@ -63,20 +63,33 @@ export function Navbar() {
                                     <span className="sr-only">Toggle menu</span>
                                 </Button>
                             </SheetTrigger>
-                            <SheetContent side="right" className="w-[300px]">
-                                <div className="flex flex-col gap-8 mt-10">
+                            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                                <div className="flex flex-col gap-6 mt-10">
+                                    <div className="flex items-center gap-2 mb-4">
+                                        <div className="relative w-8 h-8">
+                                            <Image
+                                                src="/images/salahconnect-logo.png"
+                                                alt="Saleh Connect Logo"
+                                                fill
+                                                className="object-contain"
+                                            />
+                                        </div>
+                                        <span className="font-heading text-lg font-bold tracking-tight">
+                                            Saleh Connects
+                                        </span>
+                                    </div>
                                     <div className="flex flex-col gap-4">
                                         {navItems.map((item) => (
                                             <Link
                                                 key={item.href}
                                                 href={item.href}
                                                 onClick={() => setIsOpen(false)}
-                                                className="text-lg font-medium hover:text-primary transition-colors text-right"
+                                                className="text-lg font-medium hover:text-primary transition-colors text-left py-2 border-b border-border/10"
                                             >
                                                 {item.label}
                                             </Link>
                                         ))}
-                                        <Button asChild className="w-full mt-4 rounded-full font-bold">
+                                        <Button asChild className="w-full mt-2 rounded-full font-bold">
                                             <Link href="#contact" onClick={() => setIsOpen(false)}>Get Started</Link>
                                         </Button>
                                     </div>

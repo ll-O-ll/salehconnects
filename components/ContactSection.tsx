@@ -22,11 +22,11 @@ export function ContactSection() {
                         </div>
 
                         <div className="space-y-6 pt-8">
-                            <a href="mailto:Babuker@salehconnect.com" className="flex items-center gap-4 text-xl md:text-2xl hover:text-primary transition-colors group">
+                            <a href="mailto:babuker@salehconnects.com" className="flex items-center gap-4 text-xl md:text-2xl hover:text-primary transition-colors group">
                                 <span className="p-3 rounded-full bg-muted/50 group-hover:bg-primary/20 transition-colors">
                                     <Mail className="w-6 h-6" />
                                 </span>
-                                Babuker@salehconnect.com
+                                babuker@salehconnects.com
                             </a>
                             <a href="https://www.instagram.com/salehconnects/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-xl md:text-2xl hover:text-primary transition-colors group">
                                 <span className="p-3 rounded-full bg-muted/50 group-hover:bg-primary/20 transition-colors">

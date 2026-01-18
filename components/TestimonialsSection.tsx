@@ -61,9 +61,6 @@ export function TestimonialsSection() {
         <section id="testimonials" className="py-32 bg-muted/30">
             <div className="container mx-auto px-6 md:px-12">
                 <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
-                    <h2 className="text-3xl md:text-5xl font-heading font-bold tracking-tight text-foreground">
-                        Travel Creator Specialists
-                    </h2>
                     <p className="text-muted-foreground text-lg">
                         We bridge the gap between <strong>Travel Influencers</strong> and brands that service the travel industry.
                     </p>

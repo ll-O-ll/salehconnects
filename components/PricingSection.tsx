@@ -66,7 +66,7 @@ export function PricingSection() {
                         </ul>
 
                         <Button asChild className="w-full h-12 text-lg font-bold rounded-xl bg-foreground text-background hover:bg-foreground/90 transition-all">
-                            <a href="#contact">Get a Quote</a>
+                            <a href="#contact">Partner Now</a>
                         </Button>
 
                         <p className="text-xs text-center text-muted-foreground mt-4">

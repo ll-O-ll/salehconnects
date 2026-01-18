@@ -57,16 +57,10 @@ export function PricingSection() {
                                 </div>
                                 <span className="text-sm">Performance Tracking &amp; Reporting</span>
                             </li>
-                            <li className="flex items-start gap-3">
-                                <div className="mt-1 bg-primary/10 p-1 rounded-full">
-                                    <Check className="w-4 h-4 text-primary" />
-                                </div>
-                                <span className="text-sm">Upsell &amp; Resell Opportunities</span>
-                            </li>
                         </ul>
 
                         <Button asChild className="w-full h-12 text-lg font-bold rounded-xl bg-foreground text-background hover:bg-foreground/90 transition-all">
-                            <a href="#contact">Partner Now</a>
+                            <a href="/partner">Partner Now</a>
                         </Button>
 
                         <p className="text-xs text-center text-muted-foreground mt-4">

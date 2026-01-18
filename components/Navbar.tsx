@@ -51,7 +51,7 @@ export function Navbar() {
                             ))}
                         </div>
                         <Button asChild size="sm" className="rounded-full px-6 font-bold">
-                            <Link href="#contact">Partner Now</Link>
+                            <Link href="/partner">Partner Now</Link>
                         </Button>
                     </div>
 
@@ -91,7 +91,7 @@ export function Navbar() {
                                             </Link>
                                         ))}
                                         <Button asChild className="w-full mt-4 rounded-full font-bold h-12 text-md">
-                                            <Link href="#contact" onClick={() => setIsOpen(false)}>Partner Now</Link>
+                                            <Link href="/partner" onClick={() => setIsOpen(false)}>Partner Now</Link>
                                         </Button>
                                     </div>
                                 </div>

@@ -27,7 +27,7 @@ export function HeroSection() {
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
                     <Button asChild size="lg" className="h-14 px-8 text-lg font-medium bg-primary text-primary-foreground hover:bg-primary/90 rounded-full transition-all hover:scale-105">
-                        <Link href="#contact">
+                        <Link href="/partner">
                             Begin Your Partnership <ArrowRight className="ml-2 w-5 h-5" />
                         </Link>
                     </Button>

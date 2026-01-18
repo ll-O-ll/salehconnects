@@ -22,12 +22,12 @@ const testimonials: Testimonial[] = [
         influencerName: "MyerTravels",
         influencerHandle: "@MyerTravels",
         influencerUrl: "https://www.youtube.com/channel/UCFKiXXD3aVWU60VQCuUvPHA",
-        brandName: "Yesim",
-        brandUrl: "https://yesim.app/",
-        brandImage: "/images/brands/yesim.png",
+        brandName: "Travel Creator",
+        brandUrl: "#",
+        brandImage: "/images/salahconnect-logo.png", // Using agency logo as placeholder for generic
         contentUrl: "/videos/myertravels-testimonials.mp4",
         result: "Video Testimonial",
-        description: "Showcasing Yesim's ease of use for frequent flyers through an authentic video walkthrough.",
+        description: "MyerTravels shares their experience partnering with Saleh Connects to scale their brand partnerships.",
         thumbnail: "/images/influencers/myer-travels-testimonials-thumbnails.PNG"
     }
 ]
@@ -73,26 +73,12 @@ export function TestimonialsSection() {
                                 </div>
 
                                 <div className="p-8 space-y-6">
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex items-center justify-center pt-8">
                                         <div className="flex items-center gap-3">
-                                            <div className="relative w-12 h-12 rounded-full overflow-hidden bg-white/10 p-1">
-                                                <Image
-                                                    src={item.brandImage}
-                                                    alt={item.brandName}
-                                                    width={48}
-                                                    height={48}
-                                                    className="object-contain w-full h-full rounded-full"
-                                                />
+                                            {/* Removed specific brand branding for generic testimonial */}
+                                            <div className="text-center">
+                                                <h3 className="font-heading font-bold text-2xl mb-2">Partner Feedback</h3>
                                             </div>
-                                            <div>
-                                                <h3 className="font-bold text-lg">{item.brandName}</h3>
-                                                <a href={item.brandUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-muted-foreground hover:text-primary transition-colors">
-                                                    Visit Brand
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="text-primary">
-                                            <span className="text-2xl font-bold">X</span>
                                         </div>
                                     </div>
 

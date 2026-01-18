@@ -62,7 +62,7 @@ export function ContactSection() {
                         </div>
 
                         <div className="mt-12 text-center">
-                            <p className="text-muted-foreground text-sm mb-4">Saleh Connect © {new Date().getFullYear()}. All rights reserved.</p>
+                            <p className="text-muted-foreground text-sm mb-4">Saleh Connects © 2026. All rights reserved.</p>
                         </div>
                     </div>
                 </div>

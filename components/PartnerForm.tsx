@@ -15,6 +15,9 @@ export function PartnerForm() {
         goal: '',
         audience: '',
         budget: '',
+        currentInfluencers: '',
+        currentAgency: '',
+        topPlatforms: '',
         details: ''
     });
 
@@ -37,7 +40,10 @@ I'm interested in partnering with you. Here are my details:
 3. Primary Goal: ${formData.goal}
 4. Target Audience: ${formData.audience}
 5. Budget Range: ${formData.budget}
-6. Additional Details:
+6. Current Influencers: ${formData.currentInfluencers}
+7. Current Agency: ${formData.currentAgency}
+8. Top Platforms: ${formData.topPlatforms}
+9. Additional Details:
 ${formData.details}
 
 Looking forward to hearing from you.
@@ -114,27 +120,61 @@ Best regards,
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="budget">Estimated Monthly Budget</Label>
+                            <Label htmlFor="budget">Estimated Monthly Budget (Optional)</Label>
                             <Input
                                 id="budget"
                                 name="budget"
                                 placeholder="e.g. $5k - $10k, $10k+"
                                 value={formData.budget}
                                 onChange={handleChange}
-                                required
                                 className="bg-background/50 h-12"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="details">Additional Details & Questions</Label>
+                            <Label htmlFor="currentInfluencers">Do you have any influencer(s) marketing your brand? If so, please name them (Optional)</Label>
+                            <Input
+                                id="currentInfluencers"
+                                name="currentInfluencers"
+                                placeholder="e.g. Yes, we work with a few / No, just starting"
+                                value={formData.currentInfluencers}
+                                onChange={handleChange}
+                                className="bg-background/50 h-12"
+                            />
+                        </div>
+
+                        <div className="space-y-2">
+                            <Label htmlFor="currentAgency">Do you have any agency partnering/sourcing you with influencers? If so, please name them (Optional)</Label>
+                            <Input
+                                id="currentAgency"
+                                name="currentAgency"
+                                placeholder="e.g. Yes / No"
+                                value={formData.currentAgency}
+                                onChange={handleChange}
+                                className="bg-background/50 h-12"
+                            />
+                        </div>
+
+                        <div className="space-y-2">
+                            <Label htmlFor="topPlatforms">What platforms are you seeing the most results in? (Optional)</Label>
+                            <Input
+                                id="topPlatforms"
+                                name="topPlatforms"
+                                placeholder="e.g. YouTube, Instagram"
+                                value={formData.topPlatforms}
+                                onChange={handleChange}
+                                className="bg-background/50 h-12"
+                            />
+                        </div>
+
+                        <div className="space-y-2">
+                            <Label htmlFor="details">Additional Details & Questions (Optional)</Label>
                             <Textarea
                                 id="details"
                                 name="details"
                                 placeholder="Tell us more about your campaign ideas or any specific requirements..."
                                 value={formData.details}
                                 onChange={handleChange}
-                                required
                                 className="bg-background/50 min-h-[150px] resize-none"
                             />
                         </div>

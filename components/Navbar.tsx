@@ -4,17 +4,17 @@ import React from 'react';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import Image from "next/image";
 
 export function Navbar() {
     const [isOpen, setIsOpen] = React.useState(false);
 
     const navItems = [
-        { label: "Testimonials", href: '#testimonials' },
-        { label: "Case Studies", href: '#case-studies' },
-        { label: "Pricing", href: '#pricing' },
-        { label: "Contact", href: '#contact' },
+        { label: "Testimonials", href: '/#testimonials' },
+        { label: "Case Studies", href: '/#case-studies' },
+        { label: "Pricing", href: '/#pricing' },
+        { label: "Contact", href: '/#contact' },
     ];
 
     return (
@@ -67,17 +67,19 @@ export function Navbar() {
                             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                                 <div className="flex flex-col h-full justify-center items-center gap-10">
                                     <div className="flex flex-col items-center gap-4">
-                                        <div className="relative w-12 h-12">
-                                            <Image
-                                                src="/images/salahconnect-logo.png"
-                                                alt="Saleh Connect Logo"
-                                                fill
-                                                className="object-contain"
-                                            />
-                                        </div>
-                                        <span className="font-heading text-2xl font-bold tracking-tight text-center">
-                                            Saleh Connects
-                                        </span>
+                                        <Link href="/" onClick={() => setIsOpen(false)} className="flex flex-col items-center gap-4">
+                                            <div className="relative w-12 h-12">
+                                                <Image
+                                                    src="/images/salahconnect-logo.png"
+                                                    alt="Saleh Connect Logo"
+                                                    fill
+                                                    className="object-contain"
+                                                />
+                                            </div>
+                                            <SheetTitle className="font-heading text-2xl font-bold tracking-tight text-center">
+                                                Saleh Connects
+                                            </SheetTitle>
+                                        </Link>
                                     </div>
                                     <div className="flex flex-col gap-6 w-full px-6">
                                         {navItems.map((item) => (

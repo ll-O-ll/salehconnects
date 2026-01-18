@@ -69,8 +69,8 @@ export function CaseStudiesSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start">
                     {caseStudies.map((item, index) => (
-                        <Card key={index} className="bg-card border-border/50 overflow-hidden hover:shadow-2xl transition-all duration-300 group h-full">
-                            <CardContent className="p-0 flex flex-col h-full">
+                        <Card key={index} className="bg-card border-border/50 overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                            <CardContent className="p-0 flex flex-col">
                                 {/* Media Container */}
                                 <div className={`relative w-full bg-black overflow-hidden ${item.type === 'image' ? 'aspect-video' : 'aspect-[9/16]'}`}>
                                     {item.type === "image" ? (
@@ -86,7 +86,8 @@ export function CaseStudiesSection() {
                                             className="w-full h-full object-cover"
                                             frameBorder="0"
                                             scrolling="no"
-                                            allowTransparency
+                                            // @ts-expect-error - allowtransparency is a legacy attribute
+                                            allowtransparency="true"
                                         />
                                     ) : (
                                         <div className="w-full h-full flex items-center justify-center text-white">Video Placeholder</div>
@@ -98,7 +99,7 @@ export function CaseStudiesSection() {
                                     </div>
                                 </div>
 
-                                <div className="p-6 space-y-6 flex-1 flex flex-col">
+                                <div className="p-6 space-y-6 flex flex-col">
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center gap-3">
                                             <div className="relative w-10 h-10 rounded-full overflow-hidden bg-white/10 p-0.5">
@@ -117,11 +118,11 @@ export function CaseStudiesSection() {
                                         <div className="text-primary text-sm font-bold opacity-50">PARTNERED</div>
                                     </div>
 
-                                    <p className="text-sm text-muted-foreground italic border-l-2 border-primary/20 pl-4 flex-1">
+                                    <p className="text-sm text-muted-foreground italic border-l-2 border-primary/20 pl-4">
                                         "{item.description}"
                                     </p>
 
-                                    <div className="pt-4 border-t border-border/50 mt-auto">
+                                    <div className="pt-4 border-t border-border/50">
                                         <div className="flex items-center justify-between">
                                             <div>
                                                 <p className="text-xs text-muted-foreground mb-0.5">Influencer</p>

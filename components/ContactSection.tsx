@@ -43,27 +43,9 @@ export function ContactSection() {
                         </div>
                     </div>
 
-                    <div className="bg-muted/10 p-8 md:p-12 rounded-3xl border border-border/50">
-                        <h3 className="text-2xl font-bold mb-6">Accepted Payment Methods</h3>
-                        <div className="space-y-6">
-                            <div className="flex items-center justify-between p-4 bg-background rounded-xl border border-border">
-                                <div className="font-medium">Bank Transfer</div>
-                                <div className="text-xs text-muted-foreground uppercase tracking-widest">Global</div>
-                            </div>
-                            <div className="flex items-center justify-between p-4 bg-background rounded-xl border border-border">
-                                <div className="font-medium">e-Transfer (Interac)</div>
-                                <div className="text-xs text-muted-foreground uppercase tracking-widest">Canada</div>
-                            </div>
-                            <div className="p-4 bg-primary/10 rounded-xl border border-primary/20">
-                                <p className="text-sm text-center font-medium">
-                                    Secure payments via invoice. Contact for details.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="mt-12 text-center">
-                            <p className="text-muted-foreground text-sm mb-4">Saleh Connects © 2026. All rights reserved.</p>
-                        </div>
+                    <div className="bg-muted/10 p-8 md:p-12 rounded-3xl border border-border/50 flex flex-col justify-center text-center">
+                        <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
+                        <p className="text-muted-foreground text-sm mb-4">Saleh Connects © 2026. All rights reserved.</p>
                     </div>
                 </div>
             </div>

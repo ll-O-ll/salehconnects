@@ -18,30 +18,6 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
     {
-        type: "image",
-        influencerName: "Sabbatical",
-        influencerHandle: "@Sabbatical",
-        influencerUrl: "https://www.youtube.com/@SabbaticalTommy",
-        brandName: "Airalo",
-        brandUrl: "https://www.airalo.com/",
-        brandImage: "/images/brands/airalo.png",
-        contentUrl: "/images/influencers/tommy-sabbatical.PNG",
-        result: "High Engagement",
-        description: "Connecting travel veteran Tommy with global connectivity provider Airalo for a seamless integration associated with travel freedom."
-    },
-    {
-        type: "image",
-        influencerName: "BacktoBasics",
-        influencerHandle: "@BacktoBasics",
-        influencerUrl: "https://www.youtube.com/@BacktoBasics",
-        brandName: "Nomad eSim",
-        brandUrl: "https://www.nomadesim.com/",
-        brandImage: "/images/brands/nomad-esim.png",
-        contentUrl: "/images/influencers/back-to-basics-team.PNG",
-        result: "Successful Integration",
-        description: "Helping the BacktoBasics team stay connected during their off-grid adventures with Nomad eSim."
-    },
-    {
         type: "video",
         influencerName: "MyerTravels",
         influencerHandle: "@MyerTravels",
@@ -67,9 +43,9 @@ export function TestimonialsSection() {
                 </div>
 
                 {/* Using items-start to prevent cards from stretching to match the tallest one */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start">
+                <div className="flex justify-center">
                     {testimonials.map((item, index) => (
-                        <Card key={index} className="bg-card border-none overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                        <Card key={index} className="bg-card border-none overflow-hidden hover:shadow-2xl transition-all duration-300 group max-w-md w-full">
                             <CardContent className="p-0">
                                 {/* Media Container - Dynamic Aspect Ratio based on content type */}
                                 {/* We allow the container to take its natural height based on the ratio, not forced by other cards */}

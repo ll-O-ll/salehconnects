@@ -11,7 +11,8 @@ export function Navbar() {
     const [isOpen, setIsOpen] = React.useState(false);
 
     const navItems = [
-        { label: "Services", href: '#testimonials' }, // Using testimonials as a proxy for "Work/Services"
+        { label: "Testimonials", href: '#testimonials' },
+        { label: "Case Studies", href: '#case-studies' },
         { label: "Pricing", href: '#pricing' },
         { label: "Contact", href: '#contact' },
     ];

@@ -14,7 +14,7 @@ export function ContactSection() {
                     <div className="space-y-8">
                         <div>
                             <h2 className="text-4xl md:text-6xl font-heading font-bold tracking-tight text-foreground mb-4">
-                                Let's Talk Business
+                                Connect With Us!
                             </h2>
                             <p className="text-xl text-muted-foreground font-light">
                                 Ready to scale your brand? Reach out and let's discuss your custom strategy.
